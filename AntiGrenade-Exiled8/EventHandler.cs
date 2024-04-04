@@ -9,7 +9,7 @@ namespace AntiGrenade_Exiled8
     {
         public static void UsingItem(UsingItemEventArgs ev)
         {
-            if (ev.Item == Item.Create(ItemType.GrenadeHE))
+            if (ev.Usable.Type == ItemType.GrenadeHE)
             {
                 ev.IsAllowed = false;
             }
